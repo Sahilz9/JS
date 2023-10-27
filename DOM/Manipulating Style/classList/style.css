@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.green {
+    background-color: green;
+}
+
+.underline {
+    text-decoration: underline black dotted;
+}
