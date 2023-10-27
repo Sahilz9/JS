@@ -8,7 +8,7 @@
 // 1. beforebegin -> Before the targetElement itself
 // 2. afterbegin  -> Just inside the targetElement, before its first child
 // 3. beforeend   -> Just inside the targetElement, after its last child
-// 4.afterend     -> After the targetElement itself 
+// 4. afterend    -> After the targetElement itself 
 
 
 let newPara = document.createElement('p');
