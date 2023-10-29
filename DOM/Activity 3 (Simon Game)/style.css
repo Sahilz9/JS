@@ -16,7 +16,7 @@ body {
     transform: translate(0, 0);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1));
-    border-radius: 50%; /* Makes the buttons round */
+    border-radius: 50%; 
 }
 
 .btn-container {
@@ -52,4 +52,23 @@ body {
 .btn:hover {
     transform: translate(2px, 2px);
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Styles for Tablets */
+@media screen and (max-width: 768px) {
+    .btn {
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+    }
+}
+
+/* Responsive Styles for Phones */
+@media screen and (max-width: 480px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        font-size: 16px;
+        margin: 1rem;
+    }
 }
