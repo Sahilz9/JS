@@ -41,25 +41,25 @@
 //     greet();
 // }
 
-h2 = document.querySelector("h2");
+// h2 = document.querySelector("h2");
 
-function changeColor(color, delay) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            h2.style.color = color;
-            console.log(`Color changed to ${color}`);
-            resolve("color changed");
-        }, delay);
-    });
-}
+// function changeColor(color, delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             h2.style.color = color;
+//             console.log(`Color changed to ${color}`);
+//             resolve("color changed");
+//         }, delay);
+//     });
+// }
 //Modifying the below code using async & await
 
-async function demo() {
-    changeColor("red", 1000);
-    await changeColor("blue", 1000);
-    await changeColor("green", 1000);
-    await changeColor("yellow", 1000);
-}
+// async function demo() {
+//     changeColor("red", 1000);
+//     await changeColor("blue", 1000);
+//     await changeColor("green", 1000);
+//     await changeColor("yellow", 1000);
+// }
 
 // changeColor("red", 1000)
 //     .then(() => {
@@ -74,3 +74,33 @@ async function demo() {
 //     .catch((error) => {
 //         console.log("found error");
 //     })
+
+
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Namaster Javascript");
+    }, 10000);
+})
+
+const p2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Namaste Javascript2");
+    }, 5000);
+})
+
+
+async function helloWorld() {
+    console.log("Hello Aliens!");
+
+
+    const val = await p1;
+    console.log("Namaste React");
+    console.log(val);
+
+
+    const valu = await p2;
+    console.log("Namaster React 2");
+    console.log(valu);
+}
+
+helloWorld();
