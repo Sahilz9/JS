@@ -98,9 +98,9 @@ async function helloWorld() {
     console.log(val);
 
 
-    const valu = await p2;
-    console.log("Namaster React 2");
-    console.log(valu);
+    const val2 = await p2;
+    console.log("Namaster Next Js");
+    console.log(val2);
 }
 
 helloWorld();
